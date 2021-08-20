@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <title>C2M2 - HUB LATIN AMERICA - TRIPADIVASOR DASHBOARD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="../src/images/USFQ/LOGOUSFQ.svg">
+
+        <!-- plugin css -->
+        <link href="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../dist/assets/css/map.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css" />
+        <script src="https://js.arcgis.com/4.18/"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    </head>
+
+    <body class="left-side-menu-sm">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <img src="../src/images/USFQ/BARRATRIPADVISOR.png" alt="">  
+                <ul class="list-unstyled topnav-menu float-right mb-0">
+                </ul>
+
+                 <!-- LOGO -->
+                 <div class="logo-box">
+                    <a href="index.html" class="logo text-center">
+                        <span class="logo-lg">
+                            <img src="../src/images/USFQ/LOGOUSFQ.svg" alt=""height="80">
+                            <!-- <span class="logo-lg-text-light">Xeria</span> -->
+                        </span>
+                        <span class="logo-sm">
+                            <!-- <span class="logo-sm-text-dark">X</span> -->
+                            <img src="../src/images/USFQ/LOGOUSFQ.svg" alt="" height="30" >
+                        </span>
+                    </a>
+                </div>
+
+                <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+
+                </ul>
+            </div>
+            <!-- end Topbar -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left-side-menu">
+
+                <div class="slimscroll-menu">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+
+                        <ul class="metismenu" id="side-menu">
+
+                            <li class="menu-title">Navigation</li>
+
+                            <li>
+                                <a href="javascript: void(0);">
+                                    <i class="la la-dashboard"></i>
+                                    <span class="menu-arrow"></span>
+                                    <span> General </span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li>
+                                        <a href="index.html">Comparison</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);">
+                                    <img src="../src/images/USFQ/bandera-ecuador.svg" alt="" height="15px">
+                                    <span> Ecuador </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li>
+                                        <a href="layouts-sidebar-sm.html">Santa Cruz City</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);">
+                                    <img src="../src/images/USFQ/bandera-peru.svg" alt="" height="15px">
+                                    <span> Perú </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li>
+                                        <a href="apps-calendar.html">Cusco City</a>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </li>
+
+                
+                            <li>
+                                <a href="javascript: void(0);">
+                                    <img src="../src/images/USFQ/bandera-brasil.svg" alt="" height="15px">
+                                    <span> Brazil </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li>
+                                        <a href="brasil-ouro-layout.html">Ouro Preto City</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- End Sidebar -->
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">C2M2</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">BRAZIL</a></li>
+                                            <li class="breadcrumb-item active">Ouro Preto - City</li>
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Ouro Preto - City</h4>
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title --> 
+
+                        <!--Mapa Hoteles-->
+
+                    <div class=maphotel>
+                        <iframe
+                        width="800"
+                        height="620"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"
+                        src="https://www.arcgis.com/home/webmap/viewer.html?webmap=79a311691b414dc09ef7685e9071b1d6&extent=-44.0254,-20.6191,-43.2159,-20.2053">
+                 </iframe>
+                    </div>
+                        <!--Fin Mapa hoteles-->
+                    <div class="col-xl-6">
+                        <div class="card-box" dir="ltr">                          
+                            <h4 class="header-title mb-1">TripAdivasor Dataset</h4>
+                            <canvas id="polar-chart" width="800" height="450"></canvas>
+                        </div> <!-- end card-box-->
+                    </div> <!-- end col -->
+            </div> <!-- container -->
+        </div> <!-- content -->
+    
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        <!-- END wrapper -->
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- Third Party js-->
+        <script src="assets/libs/peity/jquery.peity.min.js"></script>
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+        <script src="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="assets/libs/jquery-vectormap/jquery-jvectormap-us-merc-en.js"></script>
+
+        <!-- Dashboard init -->
+        <script src="assets/js/pages/ouropolarchart.js"></script>
+        <script src="assets/js/pages/map.js"></script>
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+        
+    </body>
+</html>
